@@ -1,34 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Francisco José Anillo Carrasco</title>
-    <link rel="stylesheet" href="style.css">
-
-<style>
-    body{
-        background-color: rgb(1, 1, 27);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum Web - Francisco José Anillo Carrasco</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
     }
-h1{
-    color: white;
-}
-.titulo{
-    text-align: center;
-}
-p{color: whitesmoke;}
-.presentacion{
-    margin-top: 1%;
-    margin-left: 2%;    
-    margin-right: 2%;    
-}
-</style>
+
+    .header {
+      text-align: center;
+      background-color: #3703b1;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .skills ul {
+      list-style-type: square;
+      margin: 10px 0 0 20px;
+    }
+
+    a {
+      color: #3703b1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #3703b1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #290284;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<h1 title="titulo" class="titulo"> Francisco José Anillo Carrasco</h1>
+  <header class="header">
+    <h1>Francisco José Anillo Carrasco</h1>
+    <p>Ingeniero Informático | Amante de la tecnología</p>
+  </header>
+  
+  <main>
+    <section class="profile">
+      <h2>Perfil Profesional</h2>
+      <p>Soy un ingeniero informático apasionado por la innovación y el desarrollo de soluciones tecnológicas eficientes. Mi objetivo es aplicar mis conocimientos en proyectos desafiantes que impulsen el cambio.</p>
+    </section>
 
-<p class="presentacion"> Soy Francisco egresado del Grado en Ingeniería Informática - Ingeniería del Software en la Escuela Técnico Superior de Ingeniería Informática de la Universidad de Sevilla y estudiante del Master en Ingeniería Informática en la misma Universidad y centro.</p> 
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Desarrollo Frontend (HTML, CSS, JavaScript, React)</li>
+        <li>Desarrollo Backend (Node.js, Python, Java)</li>
+        <li>Gestión de Bases de Datos (MySQL, MongoDB, Oracle SQL)</li>
+        <li>Trabajo en equipo y liderazgo</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Experiencia Profesional</h2>
+      <div class="job">
+        <h3>Personal IT</h3>
+        <p><strong>Master Class Hispania</strong> | Marzo 2022 - Septiembre 2022</p>
+        <p>Diseño y desarrollo de aplicaciones web modernas y escalables.</p>
+      </div>
+      <div class="job">
+        <h3>Staff/Assistant</h3>
+        <p><strong>Earnest & Young</strong> | Septiembre 2022 - Abril 2023</p>
+        <p>Consultor en ciberseguridad con conocimientos en el Esquema Nacional de Seguridad así como otras normativas en ciberseguridad Europeas.</p>
+      </div>
+      <div class="job">
+        <h3>Exploitant</h3>
+        <p><strong>Sopra Steria</strong> | Mayo 2023 - Actualidad</p>
+        <p>Soporte en el desarrollo de funcionalidades para aplicaciones internas.</p>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2>Educación</h2>
+      <p><strong>Grado en Ingeniería Informática - Ingeniería del Software</strong> | Universidad de Sevilla</p>
+      <p><strong>Master Universitario en Ingeniería Informática</strong> | Universidad de Sevilla</p>
+    </section>
     
+    <h2>Proyectos Destacados</h2>
 
+    <section class="projects">
+      <div class="project">
+        <h3>Gestor de Tareas</h3>
+        <p>Aplicación web para la organización de tareas diarias.</p>
+        <a href="#">Ver proyecto</a>
+      </div>
+      <div class="project">
+        <h3>Sistema de Inventarios</h3>
+        <p>Herramienta para gestionar inventarios en pequeñas empresas.</p>
+        <a href="#">Ver proyecto</a>
+      </div>
+      <div class="project">
+        <h3>Portal Educativo</h3>
+        <p>Plataforma de aprendizaje en línea con cursos interactivos.</p>
+        <a href="#">Ver proyecto</a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:franciscojoseanillocarrasco@gmail.com">franciscojoseanillocarrasco@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/francisco-jos%C3%A9-anillo-carrasco-805744200/" target="_blank">linkedin.com/in/francisco-josé-anillo-carrasco</a></p>
+      <p>GitHub: <a href="https://github.com/FranAnillo" target="_blank">github.com/FranAnillo</a></p>
+      <button onclick="downloadCV()">Descargar Currículum</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Francisco José Anillo Carrasco</p>
+  </footer>
+
+  <script>
+    function downloadCV() {
+      window.location.href = 'Curriculum_Francisco_Jose_Anillo_Carrasco.pdf';
+    }
+  </script>
 </body>
 </html>
