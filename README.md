@@ -24,8 +24,7 @@ MyPersonalPage/
 ├── index.html
 ├── style.css
 ├── insignia-telefonica.png
-├── README.md
-└── images/
+└── README.md
 ```
 
 - **index.html**: Archivo principal que contiene el contenido de la página.
