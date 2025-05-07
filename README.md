@@ -54,4 +54,3 @@ MyPersonalPage/
 ---
 
 © 2024 Francisco José Anillo Carrasco
-```
