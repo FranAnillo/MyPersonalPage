@@ -7,8 +7,6 @@ Este proyecto es una página web personal diseñada para mostrar mi currículum,
 - [Descripción](#descripción)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Características](#características)
-- [Capturas de Pantalla](#capturas-de-pantalla)
-- [Cómo Usar](#cómo-usar)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Contacto](#contacto)
 
