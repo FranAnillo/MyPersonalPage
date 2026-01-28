@@ -3,261 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum Web - Francisco José Anillo Carrasco</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    .header {
-      text-align: center;
-      background-color: #3703b1;
-      color: white;
-      padding: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-/* Menú superior
-.navbar {
-      background-color: #3703b1;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #290284;
-    } */
-    main {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    section {
-      margin-bottom: 20px;
-    }
-
-    .skills ul {
-      list-style-type: square;
-      margin: 10px 0 0 20px;
-    }
-
-    a {
-      color: #3703b1;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      background-color: #3703b1;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    button:hover {
-      background-color: #290284;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #333;
-      color: white;
-    }
-
-    /* Botón volver arriba */
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #3703b1;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s;
-      display: none; /* Oculto por defecto */
-    }
-
-    .back-to-top:hover {
-      background-color: #290284;
-    }
-    .insignia {
-      text-align: center;
-      margin-top: 20px;
-    }
-  </style>
+  <title data-key="title">Currículum Web - Francisco José Anillo Carrasco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<!-- <nav class="navbar">
-  <a href="#home">Home</a>
-  <a href="#proyectos">Proyectos</a>
-</nav> -->
-
 <body>
+  <div class="language-selector">
+    <button data-lang="es">ES</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="fr">FR</button>
+  </div>
   <header class="header">
-    <h1>Francisco José Anillo Carrasco</h1>
-    <p>Ingeniero Informático | Amante de la tecnología</p>
+    <h1 data-key="h1">Francisco José Anillo Carrasco</h1>
+    <p data-key="p_header">Ingeniero Informático | Amante de la tecnología</p>
   </header>
   
   <main>
     <section class="profile">
-      <h2>Perfil Profesional</h2>
-      <p>Soy un Ingeniero Informático apasionado por la innovación y el desarrollo de soluciones tecnológicas eficientes. Mi objetivo es aplicar mis conocimientos en proyectos desafiantes que impulsen el cambio.</p>
+      <h2 data-key="h2_profile">Perfil Profesional</h2>
+      <p data-key="p_profile">Soy un Ingeniero Informático apasionado por la innovación y el desarrollo de soluciones tecnológicas eficientes. Mi objetivo es aplicar mis conocimientos en proyectos desafiantes que impulsen el cambio.</p>
     </section>
 
     <section class="skills">
-      <h2>Habilidades</h2>
+      <h2 data-key="h2_skills">Habilidades</h2>
       <ul>
-        <li>Desarrollo Frontend (HTML, CSS, JavaScript, React)</li>
-        <li>Desarrollo Backend (Node.js, Python, Java)</li>
-        <li>Gestión de Bases de Datos (MySQL, MongoDB, Oracle SQL)</li>
-        <li>Trabajo en equipo y liderazgo</li>
+        <li data-key="skill1">Desarrollo Frontend (HTML, CSS, JavaScript, React)</li>
+        <li data-key="skill2">Desarrollo Backend (Node.js, Python, Java)</li>
+        <li data-key="skill3">Gestión de Bases de Datos (MySQL, MongoDB, Oracle SQL)</li>
+        <li data-key="skill4">Trabajo en equipo y liderazgo</li>
       </ul>
     </section>
 
     <section class="experience">
-      <h2>Experiencia Profesional</h2>
+      <h2 data-key="h2_experience">Experiencia Profesional</h2>
       <div class="job">
-        <h3>Personal IT</h3>
-        <p><strong>Master Class Hispania</strong> | Marzo 2022 - Septiembre 2022</p>
-        <p>Diseño, desarrollo y mantenimiento de un servicio en Wordpress para la reproducción de cursos en línea haciendo énfasis en la Experiencia de usuario.</p>
+        <h3 data-key="job1_title">Personal IT</h3>
+        <p><strong data-key="job1_company">Master Class Hispania</strong> | <span data-key="job1_date">Marzo 2022 - Septiembre 2022</span></p>
+        <p data-key="job1_description">Diseño, desarrollo y mantenimiento de un servicio en Wordpress para la reproducción de cursos en línea haciendo énfasis en la Experiencia de usuario.</p>
       </div>
       <div class="job">
-        <h3>Staff/Assistant</h3>
-        <p><strong>Earnest & Young</strong> | Septiembre 2022 - Abril 2023</p>
-        <p>Consultor en ciberseguridad con conocimientos en el Esquema Nacional de Seguridad así como otras normativas en ciberseguridad Europeas.</p>
+        <h3 data-key="job2_title">Staff/Assistant</h3>
+        <p><strong data-key="job2_company">Earnest & Young</strong> | <span data-key="job2_date">Septiembre 2022 - Abril 2023</span></p>
+        <p data-key="job2_description">Consultor en ciberseguridad con conocimientos en el Esquema Nacional de Seguridad así como otras normativas en ciberseguridad Europeas.</p>
       </div>
       <div class="job">
-        <h3>Exploitant</h3>
-        <p><strong>Sopra Steria</strong> | Mayo 2023 - Actualidad</p>
-        <p>Explotación de las bases de datos de un cliente internacional en el ámbito de las Telecomunicaciones.</p>
+        <h3 data-key="job3_title">Exploitant</h3>
+        <p><strong data-key="job3_company">Sopra Steria</strong> | <span data-key="job3_date">Mayo 2023 - Actualidad</span></p>
+        <p data-key="job3_description">Explotación de las bases de datos de un cliente internacional en el ámbito de las Telecomunicaciones.</p>
       </div>
     </section>
 
     <section class="education">
-      <h2>Educación Superior</h2>
-      <p><strong>Grado en Ingeniería Informática - Ingeniería del Software</strong> | Universidad de Sevilla</p>
-      <p><strong>Master Universitario en Ingeniería Informática</strong> | Universidad de Sevilla</p>
-      <p><strong>Doctorado en Ingeniería Informática</strong> | Universidad de Sevilla</p>
+      <h2 data-key="h2_education">Educación Superior</h2>
+      <p><strong data-key="education1">Grado en Ingeniería Informática - Ingeniería del Software</strong> | <span data-key="education1_uni">Universidad de Sevilla</span></p>
+      <p><strong data-key="education2">Master Universitario en Ingeniería Informática</strong> | <span data-key="education2_uni">Universidad de Sevilla</span></p>
+      <p><strong data-key="education3">Doctorado en Ingeniería Informática</strong> | <span data-key="education3_uni">Universidad de Sevilla</span></p>
       
-      <h2>Cursos</h2>
-      <p><strong>Curso de Seguridad en el Correo Electrónico</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO SEGURIDAD EN INFRAESTRUCTURAS DE RED</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE NAVEGACIÓN SEGURA</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE GESTIÓN DE CIBERCRISIS</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE SEGURIDAD DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE RANSOMWARE</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE SEGURIDAD EN DISPOSITIVOS MÓVILES</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>NUEVO ESQUEMA NACIONAL DE SEGURIDAD (ENS)</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO DE ANÁLISIS Y GESTIÓN DE RIESGOS DE LOS SISTEMAS DE INFORMACIÓN</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO BÁSICO STIC - SEGURIDAD EN ENTORNOS WINDOWS</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO BÁSICO DE CIBERSEGURIDAD</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>CURSO BÁSICO DE FUNDAMENTOS LINUX</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>AUDITORÍAS EN EL ENS</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>APROXIMACIÓN PRÁCTICA AL ESQUEMA NACIONAL DE SEGURIDAD</strong> | Centro Criptográfico Nacional</p>
-      <p><strong>HTML & CSS - Certification Course for Beginners</strong> | Udemy</p>
-      <p><strong>JavaScript: Desde cero con NodeJS</strong> | Udemy</p>
+      <h2 data-key="h2_courses">Cursos</h2>
+      <p><strong data-key="course1">Curso de Seguridad en el Correo Electrónico</strong> | <span data-key="course1_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course2">CURSO SEGURIDAD EN INFRAESTRUCTURAS DE RED</strong> | <span data-key="course2_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course3">CURSO DE NAVEGACIÓN SEGURA</strong> | <span data-key="course3_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course4">CURSO DE GESTIÓN DE CIBERCRISIS</strong> | <span data-key="course4_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course5">CURSO DE SEGURIDAD DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES</strong> | <span data-key="course5_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course6">CURSO DE RANSOMWARE</strong> | <span data-key="course6_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course7">CURSO DE SEGURIDAD EN DISPOSITIVOS MÓVILES</strong> | <span data-key="course7_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course8">NUEVO ESQUEMA NACIONAL DE SEGURIDAD (ENS)</strong> | <span data-key="course8_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course9">CURSO DE ANÁLISIS Y GESTIÓN DE RIESGOS DE LOS SISTEMAS DE INFORMACIÓN</strong> | <span data-key="course9_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course10">CURSO BÁSICO STIC - SEGURIDAD EN ENTORNOS WINDOWS</strong> | <span data-key="course10_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course11">CURSO BÁSICO DE CIBERSEGURIDAD</strong> | <span data-key="course11_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course12">CURSO BÁSICO DE FUNDAMENTOS LINUX</strong> | <span data-key="course12_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course13">AUDITORÍAS EN EL ENS</strong> | <span data-key="course13_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course14">APROXIMACIÓN PRÁCTICA AL ESQUEMA NACIONAL DE SEGURIDAD</strong> | <span data-key="course14_ccn">Centro Criptográfico Nacional</span></p>
+      <p><strong data-key="course15">HTML & CSS - Certification Course for Beginners</strong> | <span data-key="course15_udemy">Udemy</span></p>
+      <p><strong data-key="course16">JavaScript: Desde cero con NodeJS</strong> | <span data-key="course16_udemy">Udemy</span></p>
     </section>
-    <h2>Insignias</h2>
+    <h2 data-key="h2_badges">Insignias</h2>
     <section class="insignia">
       <img src="insignia-telefonica.png" alt="Insignia Líderes Universitarios Telefónica" style="width: 750px; margin-top: 10px;">
-      <p>Insignia Líderes Universitarios Telefónica</p>
+      <p data-key="badge_p">Insignia Líderes Universitarios Telefónica</p>
     </section>
 
-    <h2>Idiomas</h2>
+    <h2 data-key="h2_languages">Idiomas</h2>
     <section class="languages">
       <ul>
-        <li>Español: Nativo</li>
-        <li>Inglés: C1 </li>
-        <li>Francés: B2</li>
+        <li data-key="language1">Español: Nativo</li>
+        <li data-key="language2">Inglés: C1 </li>
+        <li data-key="language3">Francés: B2</li>
       </ul>
-    <h2>Proyectos Destacados</h2>
+    <h2 data-key="h2_projects">Proyectos Destacados</h2>
 
 
     <section class="projects">
       <div class="project">
-        <h3>Gestor de Tareas</h3>
-        <p>Aplicación web para la organización de tareas diarias.</p>
-        <a href="https://github.com/TFGfraanicardandorsan/Backend" target="_blank">Ver Backend</a></br>
-        <a href="https://github.com/TFGfraanicardandorsan/frontend-flutter.git" target="_blank">Ver Frontend</a>
+        <h3 data-key="project1_title">Gestor de Tareas</h3>
+        <p data-key="project1_desc">Aplicación web para la organización de tareas diarias.</p>
+        <a href="https://github.com/TFGfraanicardandorsan/Backend" target="_blank" data-key="project1_backend">Ver Backend</a></br>
+        <a href="https://github.com/TFGfraanicardandorsan/frontend-flutter.git" target="_blank" data-key="project1_frontend">Ver Frontend</a>
       </div>
       <div class="project">
-        <h3>Bot para el resumen de normativas de la Universidad de Sevilla</h3>
-        <p>Herramienta para resumir y contestar preguntas a través del Procesamiento de Lenguaje Natural de la Universidad de Sevilla.</p>
-        <a href="https://github.com/FranAnillo/bot-normativas-us" target="_blank">Ver proyecto</a>
+        <h3 data-key="project2_title">Bot para el resumen de normativas de la Universidad de Sevilla</h3>
+        <p data-key="project2_desc">Herramienta para resumir y contestar preguntas a través del Procesamiento de Lenguaje Natural de la Universidad de Sevilla.</p>
+        <a href="https://github.com/FranAnillo/bot-normativas-us" target="_blank" data-key="project2_link">Ver proyecto</a>
       </div>
       <div class="project">
-        <h3>Portal Educativo</h3>
-        <p>Plataforma de aprendizaje en línea con cursos interactivos.</p>
-        <a href="https://github.com/iTeaching/Back-End" target="_blank">Ver proyecto</a>
+        <h3 data-key="project3_title">Portal Educativo</h3>
+        <p data-key="project3_desc">Plataforma de aprendizaje en línea con cursos interactivos.</p>
+        <a href="https://github.com/iTeaching/Back-End" target="_blank" data-key="project3_link">Ver proyecto</a>
       </div>
     </section>
 
     
     <section class="contact">
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:franciscojoseanillocarrasco@gmail.com">franciscojoseanillocarrasco@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/francisco-jos%C3%A9-anillo-carrasco-805744200/" target="_blank">linkedin.com/in/francisco-josé-anillo-carrasco</a></p>
-      <p>GitHub: <a href="https://github.com/FranAnillo" target="_blank">github.com/FranAnillo</a></p>
-      <button onclick="downloadCV()">Descargar Currículum</button>
+      <h2 data-key="h2_contact">Contacto</h2>
+      <p><span data-key="contact_email">Email:</span> <a href="mailto:franciscojoseanillocarrasco@gmail.com">franciscojoseanillocarrasco@gmail.com</a></p>
+      <p><span data-key="contact_linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/francisco-jos%C3%A9-anillo-carrasco-805744200/" target="_blank">linkedin.com/in/francisco-josé-anillo-carrasco</a></p>
+      <p><span data-key="contact_github">GitHub:</span> <a href="https://github.com/FranAnillo" target="_blank">github.com/FranAnillo</a></p>
+      <button onclick="downloadCV()" data-key="download_cv">Descargar Currículum</button>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2024 Francisco José Anillo Carrasco</p>
+    <p data-key="footer_p">© 2024 Francisco José Anillo Carrasco</p>
   </footer>
   <button class="back-to-top" onclick="scrollToTop()">↑</button>
 
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
   <script>
     // Mostrar/Ocultar botón "Volver arriba"
     window.addEventListener('scroll', function() {
