@@ -1,6 +1,5 @@
 
 const languageSelector = document.querySelector('.language-selector');
-const-
 document.addEventListener('DOMContentLoaded', () => {
     const languageSelector = document.querySelector('.language-selector');
     if(languageSelector) {
